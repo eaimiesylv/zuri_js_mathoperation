@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Addition of Numbers</title>
+   
+  </head>
+  <body>
+	
+  </body>
+  <script>
+	
+	let x= parseInt(prompt("Enter 1 for addition, 2 for subtraction, 3 for multiplication, 4  for division"), 10);
+	if(x > 0 && x < 5){
+			
+		
+			let a= parseInt(prompt("Enter first number"), 10);
+			let b= parseInt( prompt("Enter second number"), 10);
+			
+				let result="";
+				let operation="";
+				 switch (x) {
+				  case 1:
+					result = a + b;
+					operation="Addition";
+					break;
+				  case 2:
+					result = a - b;
+					operation="Subtraction";
+					break;
+				  case 3:
+					result = a * b;
+					operation="Multiplication";
+					break;
+				  case 4:
+					result = a / b
+					operation="Division";
+					break;
+				  default:
+					result = "Select a number between 1 and 4";
+				}
+			alert(` The ${operation} of  ${a} and ${b} is ${result}`);
+		}
+	else
+		{
+			alert("Select a number between 1 and 4")
+		}
+		
+		
+  </script>
+</html>
